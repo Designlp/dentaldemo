@@ -275,7 +275,7 @@ CREATE TABLE `tblprintfooter` (
 --
 
 INSERT INTO `tblprintfooter` (`PFID`, `FirstLine`, `SecondLine`, `ThirdLine`) VALUES
-(1, 'Prices includes Dental Clinic where applicable', '', 'Thank you for your business.');
+(1, 'Prices includes Donto where applicable', '', 'Thank you for your business.');
 
 -- --------------------------------------------------------
 

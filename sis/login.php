@@ -18,7 +18,7 @@ if(isset($_SESSION['ADMIN_USERID'])){
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Dental Clinic</title>
+  <title>Donto</title>
 
   <!-- Custom fonts for this template-->
   <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
@@ -26,6 +26,16 @@ if(isset($_SESSION['ADMIN_USERID'])){
 
   <!-- <link href="css/sb-admin-2.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/login.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Donto | Login</title>
+    <link rel="icon" href="../assets/images/fav-icon.png">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/superclasses.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
 
 </head>
 <body class="align">
@@ -38,23 +48,23 @@ if(isset($_SESSION['ADMIN_USERID'])){
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>
           </svg><span class="hidden">Username</span></label>
-        <input autocomplete="username" id="user_email" type="text" name="user_email" aria-describedby="emailHelp" class="form__input" placeholder="Username" required>
+        <input autocomplete="username" id="user_email" type="text" name="user_email" aria-describedby="emailHelp" class="form__input" placeholder="Usuario" required>
       </div>
 
       <div class="form__field">
         <label for="login__password"><svg class="icon">
             <use xlink:href="#icon-lock"></use>
           </svg><span class="hidden">Password</span></label>
-        <input id="user_pass" name="user_pass" type="password" class="form__input" placeholder="Password" required>
+        <input id="user_pass" name="user_pass" type="password" class="form__input" placeholder="Contraseña" required>
       </div>
 
-      <div class="form__field">
-        <input type="submit" name="btnLogin"  value="Sign In">
+      <div class="form__field cajitalog">
+        <input type="submit" name="btnLogin"  value="Ingresar">
       </div>
 
     </form>
 
-    <p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon">
+    <p class="text--center">Olvidaste tu contraseña <svg class="icon">
         <use xlink:href="#icon-arrow-right"></use>
       </svg></p>
 

@@ -15,7 +15,7 @@
 
               
             // }
-           echo 'Dental Clinic';
+           echo 'Donto';
 
           ?>
         </title>
@@ -50,6 +50,8 @@
         <link href="<?php echo web_root; ?>dist/css/jquery.treetable.css" rel="stylesheet">
         <link href="<?php echo web_root; ?>dist/css/jquery.treetable.theme.default.css" rel="stylesheet">
 
+
+        
 <style type="text/css">
   .stretch-img img {
     width: 100%;
@@ -57,11 +59,11 @@
   }
 
      thead{
-        background: #3c8dbc;
-          background: -webkit-linear-gradient(left, #367fa9, #3c8dbc);
-          background: -o-linear-gradient(left, #367fa9, #3c8dbc);
-          background: -moz-linear-gradient(left, #367fa9, #3c8dbc);
-          background: linear-gradient(left, #367fa9, #3c8dbc);
+        background: #243ffa;
+          background: -webkit-linear-gradient(left, #367fa9, #243ffa);
+          background: -o-linear-gradient(left, #367fa9, #243ffa);
+          background: -moz-linear-gradient(left, #367fa9, #243ffa);
+          background: linear-gradient(left, #367fa9, #243ffa);
 
           color: #fff;
     }
@@ -84,7 +86,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini stretch-img"><b><img src="<?php echo web_root;?>/dist/img/logo.png"></b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Dental Clinic</b></span>
+      <span class="logo-lg"><b>Donto</b></span>
       <!-- A web based medical store locator with android application -->
     </a>
     <!-- Header Navbar: style can be found in header.less -->
@@ -195,55 +197,55 @@
         <?php if($_SESSION['ADMIN_ROLE']=="Administrator"){ ?>  
         <li class="<?php echo (currentpage() == 'services') ? "active" : false;?>" >
           <a href="<?php echo web_root ;?>services/">
-            <i class="fa fa-tree"></i> <span>Services</span> 
+            <i class="fa fa-tree"></i> <span>Servicios</span> 
           </a>
         </li> 
           <?php } ?> 
         <li class="<?php echo (currentpage() == 'invoices') ? "active" : false;?>" > 
           <a href="<?php echo web_root ;?>invoices/">
-            <i class="fa fa-dollar"></i> <span>Invoices</span>  
+            <i class="fa fa-dollar"></i> <span>Facturas</span>  
           </a>
         </li> 
         <li class="<?php echo (currentpage() == 'appointments') ? "active" : false;?>" > 
           <a href="<?php echo web_root ;?>appointments/">
-            <i class="fa fa-calendar"></i> <span>Appointments</span>  
+            <i class="fa fa-calendar"></i> <span>Citas</span>  
           </a>
         </li> 
         <li class="<?php echo (currentpage() == 'stockin') ? "active" : false;?>" > 
           <a href="<?php echo web_root ;?>stockin/">
-            <i class="fa fa-barcode"></i> <span>Supplies</span>  
+            <i class="fa fa-barcode"></i> <span>Suministros</span>  
           </a>
         </li> 
         <li class="<?php echo (currentpage() == 'prescription') ? "active" : false;?>" > 
           <a href="<?php echo web_root ;?>prescription/">
-            <i class="fa fa-barcode"></i> <span>Add Prescription to Patien</span>  
+            <i class="fa fa-barcode"></i> <span>Agregar receta al paciente</span>  
           </a>
         </li> 
          <?php if($_SESSION['ADMIN_ROLE']=="Administrator"){ ?> 
         <li class="<?php echo (currentpage() == 'inventoryreports') ? "active" : false;?>">
           <a href="<?php echo web_root; ?>inventoryreports/">
-            <i class="fa fa-bar-chart"></i> <span>Inventory Reports</span> </a>
+            <i class="fa fa-bar-chart"></i> <span>Reportes de inventario</span> </a>
         </li> 
         <li class="<?php echo (currentpage() == 'reports') ? "active" : false;?>">
           <a href="<?php echo web_root; ?>reports/">
-            <i class="fa fa-bar-chart"></i> <span>Sales Reports</span> </a>
+            <i class="fa fa-bar-chart"></i> <span>Reporte de ventas</span> </a>
         </li> 
        <li class="treeview <?php echo (currentpage() == 'user' || currentpage() == 'suplier' ||
        currentpage() == 'taxrate' || currentpage() == 'discountrate' || currentpage() == 'currency' || 
        currentpage() == 'units' || currentpage() == 'settings' ||  currentpage() == 'taxsettings' || currentpage() == 'autonumber') ? "active" : false;?>">
           <a href="#">
             <i class="fa fa-gear"></i>
-            <span>Settings</span>
+            <span>Configuracion</span>
             <i class="fa fa-angle-left pull-right"></i>
           </a> 
           <ul class="treeview-menu">
-            <li class="<?php echo (currentpage() == 'user') ? "active" : false;?>"><a href="<?php echo web_root;?>user/"><i class="fa fa-circle-o"></i> Manage Users</a></li>
+            <li class="<?php echo (currentpage() == 'user') ? "active" : false;?>"><a href="<?php echo web_root;?>user/"><i class="fa fa-circle-o"></i> Administrar usuarios</a></li>
             <!-- <li class="<?php echo (currentpage() == 'suplier') ? "active" : false;?>"><a href="<?php echo web_root ;?>suplier/"><i class="fa fa-circle-o"></i> Manage Suppliers</a></li> -->
             <!-- <li class="<?php echo (currentpage() == 'taxrate') ? "active" : false;?>"><a href="<?php echo web_root ;?>taxrate/"><i class="fa fa-circle-o"></i> Tax Rates</a></li> -->
             <!-- <li class="<?php echo (currentpage() == 'discountrate') ? "active" : false;?>"><a href="<?php echo web_root ;?>discountrate/"><i class="fa fa-circle-o"></i> Discount Rates</a></li> -->
-            <li class="<?php echo (currentpage() == 'currency') ? "active" : false;?>"><a href="<?php echo web_root ;?>currency/"><i class="fa fa-circle-o"></i> Currency</a></li>
+            <li class="<?php echo (currentpage() == 'currency') ? "active" : false;?>"><a href="<?php echo web_root ;?>currency/"><i class="fa fa-circle-o"></i> Divisa</a></li>
             <!-- <li class="<?php echo (currentpage() == 'units') ? "active" : false;?>"><a href="<?php echo web_root ;?>units/"><i class="fa fa-circle-o"></i> Units</a></li> -->
-            <li class="<?php echo (currentpage() == 'settings') ? "active" : false;?>"><a href="<?php echo web_root ;?>settings/"><i class="fa fa-circle-o"></i> Header and Footer</a></li>
+            <li class="<?php echo (currentpage() == 'settings') ? "active" : false;?>"><a href="<?php echo web_root ;?>settings/"><i class="fa fa-circle-o"></i> Encabezado y pié de página</a></li>
              <!-- <li class="<?php echo (currentpage() == 'taxsettings') ? "active" : false;?>"><a href="<?php echo web_root ;?>taxsettings/"><i class="fa fa-circle-o"></i> Enable | Disable Tax</a></li> -->
             <!-- <li class="<?php echo (currentpage() == 'autonumber') ? "active" : false;?>"><a href="<?php echo web_root ;?>autonumber/"><i class="fa fa-circle-o"></i> Autonumbers</a></li> -->
           </ul>
@@ -312,8 +314,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.3.2
     </div>
-    <strong>Copyright &copy; 2022 <a href="https://freeprojectscodes.com/">Freeprojectscodes.com</a>.</strong> All rights
-    reserved.
+    <strong>Copyright &copy; 2024 <a href="https://freeprojectscodes.com/">Diego Mercado Castillo / DONTO</a>.</strong> Todos los derechos Reservados.
   </footer>
 
   
