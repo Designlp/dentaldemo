@@ -80,8 +80,8 @@ html {
 }
 
 body {
-  background-color: #2c3338;
-  background-color: var(--bodyBackgroundColor);
+        background: var(--secondary--color) url(../../assets/images/graphic-img.png) no-repeat;
+        background-size: cover;
   color: #606468;
   color: var(--bodyColor);
   font-family: "Open Sans", sans-serif;
